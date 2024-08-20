@@ -124,33 +124,31 @@
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-md navbar-dark bg-dark" style="position: sticky; top: 0; z-index: 1000;">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="#">
-                <h6 class=" display-6">Sevalino Elfata</h6>
-            </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark"
+        style="position: sticky; top: 0; z-index: 1000; padding: none;">
+        <div class="container-fluid" style="padding: none;">
+            <div class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav">
-                    <li class="nav-item px-3"
+            </div>
+            <div class=" collapse navbar-collapse" id="navbarNav" style="padding: none;">
+                <ul class="container-fluid navbar-nav row" align="center" style="padding: none;">
+                    <li class="nav-item px-3 col-md-3"
                         onmouseover="this.classList.add('border-bottom', 'border-light', 'border-4');"
                         onmouseout="this.classList.remove('border-bottom', 'border-light', 'border-4');">
                         <a class="nav-link" href="#aboutMe"><i class="bi bi-person-lines-fill mx-2"> </i>Aboutme</a>
                     </li>
-                    <li class="nav-item px-3"
+                    <li class="nav-item px-3 col-md-3"
                         onmouseover="this.classList.add('border-bottom', 'border-light', 'border-4');"
                         onmouseout="this.classList.remove('border-bottom', 'border-light', 'border-4');">
                         <a class="nav-link" href="#skills"><i class="bi bi-code-slash mx-2"> </i>Skills</a>
                     </li>
-                    <li class="nav-item px-3"
+                    <li class="nav-item px-3 col-md-3"
                         onmouseover="this.classList.add('border-bottom', 'border-light', 'border-4');"
                         onmouseout="this.classList.remove('border-bottom', 'border-light', 'border-4');">
                         <a class="nav-link" href="#Education"><i class="bi bi-book-half mx-2"> </i>Education</a>
                     </li>
-                    <li class="nav-item px-3"
+                    <li class="nav-item px-3 col-md-3"
                         onmouseover="this.classList.add('border-bottom', 'border-light', 'border-4');"
                         onmouseout="this.classList.remove('border-bottom', 'border-light', 'border-4');">
                         <a class="nav-link" href="#project"><i class="bi bi-pass-fill mx-2"> </i>Projects</a>
@@ -188,11 +186,13 @@
                                 <h5 class="card-title">Hello, I'm Sevalino Elfata</h5>
                                 <p class="card-text">I am a beginner Fullstack Web Programmer, excited to build and grow
                                     in the world of web development.</p>
-                                <button class="btn btn-dark btn-lg" data-bs-toggle="collapse"
-                                    data-bs-target="#aboutMeCollapse">Read More</button>
+                                <div class="btn btn-dark btn-lg" data-bs-toggle="collapse"
+                                    data-bs-target="#aboutMeCollapse">Read More</div>
                                 <div id="aboutMeCollapse" class="collapse">
-                                    <p class="card-text">I am currently a student at SMK IDN Boarding School Pamijahan,
-                                        majoring in Software Engineer. I have a keen interest in Web Programming, and I
+                                    <p class="card-text">I am currently a student at SMK IDN Boarding School
+                                        Pamijahan,
+                                        majoring in Software Engineer. I have a keen interest in Web Programming,
+                                        and I
                                         am working on developing my skills in Fullstack Programming.</p>
                                 </div>
                             </div>
@@ -211,13 +211,23 @@
                 <div class="container-fluid row">
                     <!-- PHP Skills Accordion Item -->
                     <div class="accordion-item col-lg-6 animate">
-                        <h2 class="accordion-header" id="headingOne">
-                            <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                        <div class="accordion-header" id="headingOne">
+                            <div class="accordion-button" type="button" data-bs-toggle="collapse"
                                 data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                                <i class="bi bi-filetype-php mx-2"></i> PHP Programming
-                            </button>
-                        </h2>
-                        <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne">
+                                <div class="me-3" style="flex-basis: 200px;"><i class="bi bi-filetype-php mx-2"></i> PHP
+                                    Programming</div>
+                                <div class="d-flex flex-column flex-grow-1">
+                                    <div class="mb-2">
+                                        <span class="badge bg-dark text-light rounded-pill">intermediate</span>
+                                    </div>
+                                    <div class="progress">
+                                        <div class="progress-bar bg-dark" role="progressbar" style="width: 63%;"
+                                            aria-valuenow="63" aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="collapseOne" class="accordion-collapse collapse hide" aria-labelledby="headingOne">
                             <div class="accordion-body bg-light text-dark">
                                 <ul class="list-group">
                                     <li class="list-group-item d-flex align-items-center">
@@ -368,12 +378,23 @@
                     <!-- CSS Skills Accordion Item -->
                     <div class="accordion-item col-lg-6 animate">
                         <h2 class="accordion-header" id="headingTwo">
-                            <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                            <div class="accordion-button" type="button" data-bs-toggle="collapse"
                                 data-bs-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
-                                <i class="bi bi-filetype-css mx-2"> </i> CSS Programming
-                            </button>
+                                <div class="me-3" style="flex-basis: 200px;"><i class="bi bi-filetype-css mx-2"></i>
+                                    CSS/HTML
+                                    Programming</div>
+                                <div class="d-flex flex-column flex-grow-1">
+                                    <div class="mb-2">
+                                        <span class="badge bg-dark text-light rounded-pill">intermediate</span>
+                                    </div>
+                                    <div class="progress">
+                                        <div class="progress-bar bg-dark" role="progressbar" style="width: 65%;"
+                                            aria-valuenow="65" aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div>
+                                </div>
+                            </div>
                         </h2>
-                        <div id="collapseTwo" class="accordion-collapse collapse show" aria-labelledby="headingTwo"
+                        <div id="collapseTwo" class="accordion-collapse collapse hide" aria-labelledby="headingTwo"
                             data-bs-parent="#accordionExample">
                             <div class="accordion-body bg-light text-dark">
                                 <ul class="list-group">
@@ -466,12 +487,23 @@
                     </div>
                     <div class="accordion-item col-lg-6 animate">
                         <h2 class="accordion-header" id="headingThree">
-                            <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                            <div class="accordion-button" type="button" data-bs-toggle="collapse"
                                 data-bs-target="#collapseThree" aria-expanded="true" aria-controls="collapseThree">
-                                <i class="bi bi-filetype-js mx-2"></i> JavaScript Programming
-                            </button>
+                                <div class="me-3" style="flex-basis: 200px;"><i class="bi bi-filetype-js mx-2"></i>
+                                    JS
+                                    Programming</div>
+                                <div class="d-flex flex-column flex-grow-1">
+                                    <div class="mb-2">
+                                        <span class="badge bg-dark text-light rounded-pill">Beginner</span>
+                                    </div>
+                                    <div class="progress">
+                                        <div class="progress-bar bg-dark" role="progressbar" style="width: 45%;"
+                                            aria-valuenow="63" aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div>
+                                </div>
+                            </div>
                         </h2>
-                        <div id="collapseThree" class="accordion-collapse collapse show" aria-labelledby="headingThree">
+                        <div id="collapseThree" class="accordion-collapse collapse hide" aria-labelledby="headingThree">
                             <div class="accordion-body bg-light text-dark">
                                 <ul class="list-group">
                                     <li class="list-group-item d-flex align-items-center">
@@ -483,9 +515,8 @@
                                                 <span class="badge bg-dark text-light rounded-pill">Expert</span>
                                             </div>
                                             <div class="progress">
-                                                <div class="progress-bar bg-dark" role="progressbar"
-                                                    style="width: 100%;" aria-valuenow="100" aria-valuemin="0"
-                                                    aria-valuemax="100"></div>
+                                                <div class="progress-bar bg-dark" role="progressbar" style="width: 90%;"
+                                                    aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
                                             </div>
                                         </div>
                                     </li>
@@ -493,11 +524,11 @@
                                         <div class="me-3" style="flex-basis: 200px;">DOM Manipulation</div>
                                         <div class="d-flex flex-column flex-grow-1">
                                             <div class="mb-2">
-                                                <span class="badge bg-dark text-light rounded-pill">Intermediate</span>
+                                                <span class="badge bg-dark text-light rounded-pill">Beginner</span>
                                             </div>
                                             <div class="progress">
-                                                <div class="progress-bar bg-dark" role="progressbar" style="width: 60%;"
-                                                    aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
+                                                <div class="progress-bar bg-dark" role="progressbar" style="width: 30%;"
+                                                    aria-valuenow="30" aria-valuemin="0" aria-valuemax="100"></div>
                                             </div>
                                         </div>
                                     </li>
@@ -509,7 +540,7 @@
                                             </div>
                                             <div class="progress">
                                                 <div class="progress-bar bg-dark" role="progressbar" style="width: 60%;"
-                                                    aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
+                                                    aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
                                             </div>
                                         </div>
                                     </li>
@@ -519,11 +550,11 @@
                                             Fetch API)</div>
                                         <div class="d-flex flex-column flex-grow-1">
                                             <div class="mb-2">
-                                                <span class="badge bg-dark text-light rounded-pill">Intermediate</span>
+                                                <span class="badge bg-dark text-light rounded-pill">Beginner</span>
                                             </div>
                                             <div class="progress">
-                                                <div class="progress-bar bg-dark" role="progressbar" style="width: 60%;"
-                                                    aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
+                                                <div class="progress-bar bg-dark" role="progressbar" style="width: 20%;"
+                                                    aria-valuenow="40" aria-valuemin="0" aria-valuemax="100"></div>
                                             </div>
                                         </div>
                                     </li>
@@ -533,24 +564,24 @@
                                             functions, modules)</div>
                                         <div class="d-flex flex-column flex-grow-1">
                                             <div class="mb-2">
-                                                <span class="badge bg-dark text-light rounded-pill">Intermediate</span>
+                                                <span class="badge bg-dark text-light rounded-pill">Beginner</span>
                                             </div>
                                             <div class="progress">
-                                                <div class="progress-bar bg-dark" role="progressbar" style="width: 60%;"
-                                                    aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
+                                                <div class="progress-bar bg-dark" role="progressbar" style="width: 30%;"
+                                                    aria-valuenow="40" aria-valuemin="0" aria-valuemax="100"></div>
                                             </div>
                                         </div>
                                     </li>
                                     <li class="list-group-item d-flex align-items-center">
                                         <div class="me-3" style="flex-basis: 200px;">Using JavaScript
-                                            Libraries (e.g.,
-                                            jQuery)</div>
+                                            Framework (e.g.,
+                                            VUE.js)</div>
                                         <div class="d-flex flex-column flex-grow-1">
                                             <div class="mb-2">
-                                                <span class="badge bg-dark text-light rounded-pill">Intermediate</span>
+                                                <span class="badge bg-dark text-light rounded-pill">beginner</span>
                                             </div>
                                             <div class="progress">
-                                                <div class="progress-bar bg-dark" role="progressbar" style="width: 50%;"
+                                                <div class="progress-bar bg-dark" role="progressbar" style="width: 40%;"
                                                     aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
                                             </div>
                                         </div>
@@ -559,10 +590,51 @@
                             </div>
                         </div>
                     </div>
-                    <a href="#Education" class="btn btn-dark btn-lg my-3"
-                        onmouseover="this.classList.remove('btn-dark'); this.classList.add('border', 'btn-light', 'border-dark-50 border-4');"
-                        onmouseout="this.classList.add('btn-dark'); this.classList.remove('border', 'btn-light', 'border-dark-50 border-4');">Next</a>
+                    <div class="accordion-item col-lg-6 animate mb-auto h-100">
+                        <h2 class="accordion-header" id="headingThree">
+                            <div class="accordion-button d-flex align-items-center mx-auto" type="button"
+                                data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="true"
+                                aria-controls="collapseThree">
+                                <i class="bi bi-translate mx-2"></i> Language
+                            </div>
+                        </h2>
+                        <div id="collapseFour" class="accordion-collapse collapse hide" aria-labelledby="headingThree">
+                            <div class="accordion-body bg-light text-dark">
+                                <ul class="list-group">
+                                    <li class="list-group-item d-flex align-items-center">
+                                        <div class="me-3" style="flex-basis: 200px;">Bahasa Indonesia</div>
+                                        <div class="d-flex flex-column flex-grow-1">
+                                            <div class="mb-2">
+                                                <span class="badge bg-dark text-light rounded-pill">Native</span>
+                                            </div>
+                                            <div class="progress">
+                                                <div class="progress-bar bg-dark" role="progressbar"
+                                                    style="width: 100%;" aria-valuenow="100" aria-valuemin="0"
+                                                    aria-valuemax="100"></div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="list-group-item d-flex align-items-center">
+                                        <div class="me-3" style="flex-basis: 200px;">English</div>
+                                        <div class="d-flex flex-column flex-grow-1">
+                                            <div class="mb-2">
+                                                <span class="badge bg-dark text-light rounded-pill">Intermediate
+                                                    (B1)</span>
+                                            </div>
+                                            <div class="progress">
+                                                <div class="progress-bar bg-dark" role="progressbar" style="width: 60%;"
+                                                    aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
                 </div>
+                <a href="#Education" class="container-fluid btn btn-dark btn-lg my-3"
+                    onmouseover="this.classList.remove('btn-dark'); this.classList.add('border', 'btn-light', 'border-dark-50 border-4', 'text-dark');"
+                    onmouseout="this.classList.add('btn-dark'); this.classList.remove('border', 'btn-light', 'border-dark-50 border-4', 'text-dark');">Next</a>
             </div>
         </section>
 
@@ -571,7 +643,80 @@
                 <h3 class="display-4 animate">WHERE I STUDIED?</h3>
                 <hr class="mb-5">
 
-                <div class="row justify-content-center">
+                <!-- Carousel untuk layar kecil sampai medium -->
+                <div id="educationCarousel" class="carousel slide d-md-none d-lg-none" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <!-- Sekolah Alam Indonesia Meruyung -->
+                        <div class="carousel-item active" style="height: 100%">
+                            <div class="card shadow-sm border-dark-50 h-100  bg-dark text-light" style="height: 100%;">
+                                <img style="max-width: 300px;"
+                                    src="https://yt3.ggpht.com/a/AATXAJxp1y8N6Nh3N4NXn_oKnMcRMSA8RQZ7x96qAg=s900-c-k-c0xffffffff-no-rj-mo"
+                                    alt="Sekolah Alam Indonesia Meruyung"
+                                    class="card-img-top img-fluid rounded-circle mx-auto">
+                                <div class="card-body text-start">
+                                    <h5 class="card-title">Sekolah Alam Indonesia Meruyung</h5>
+                                    <p class="card-text text-secondary">Elementary School</p>
+                                    <p class="card-text text-secondary">August 2016 - May 2022</p>
+                                    <p class="card-text">Completed elementary education at SAI Meruyung. Developed
+                                        foundational skills in mathematics, language arts, and science. Actively
+                                        participated in various school
+                                        events and extracurricular activities, including the school science fair, which
+                                        helped build early
+                                        teamwork and leadership skills.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- SMP Negeri 25 Depok -->
+                        <div class="carousel-item" style="height: 100%">
+                            <div class="card shadow-sm border-dark-50 h-100  bg-dark text-light">
+                                <img style="max-width: 300px;"
+                                    src="https://smpnegeri25depok.sch.id/wp-content/uploads/2018/10/LOGO-SMP-25-Depok_2015-1024x1024.png"
+                                    alt="SMP Negeri 25 Depok" class="card-img-top img-fluid rounded-circle mx-auto">
+                                <div class="card-body text-start">
+                                    <h5 class="card-title">SMP Negeri 25 Depok</h5>
+                                    <p class="card-text text-secondary">Junior High School</p>
+                                    <p class="card-text text-secondary">August 2022 - May 2024</p>
+                                    <p class="card-text">As an outstanding student, I excelled in subjects such
+                                        as Computer Science, Science, and Mathematics. Represented my school in the
+                                        city-level Olimpiade Sains Nasional (OSN).</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- SMK IDN Boarding School Pamijahan -->
+                        <div class="carousel-item" style="height: 100%">
+                            <div class="card shadow-sm border-dark-50 h-100 bg-dark text-light">
+                                <img style="max-width: 300px;"
+                                    src="https://th.bing.com/th/id/OIP.aYBB9w6lzBl8NPUuDZ2b_gHaHa?rs=1&pid=ImgDetMain"
+                                    alt="SMK IDN Boarding School Pamijahan"
+                                    class="card-img-top img-fluid rounded-circle mx-auto">
+                                <div class="card-body text-start">
+                                    <h5 class="card-title">SMK IDN Boarding School Pamijahan</h5>
+                                    <p class="card-text text-secondary">Vocational High School, Software Engineering</p>
+                                    <p class="card-text text-secondary">August 2024 - May 2026</p>
+                                    <p class="card-text">I am currently a student at a Vocational Boarding School
+                                        specializing in Software Engineering.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Kontrol Carousel -->
+                    <div class="carousel-control-prev" type="button" data-bs-target="#educationCarousel"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </div>
+                    <div class="carousel-control-next" type="button" data-bs-target="#educationCarousel"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </div>
+                </div>
+
+                <!-- Tampilkan layout grid untuk layar besar -->
+                <div class="row justify-content-center d-none d-lg-flex">
                     <!-- Sekolah Alam Indonesia Meruyung -->
                     <div class="col-lg-4 col-md-6 mb-4 animate">
                         <div class="card shadow-sm border-dark-50 h-100"
@@ -583,15 +728,12 @@
                                 <h5 class="card-title">Sekolah Alam Indonesia Meruyung</h5>
                                 <p class="card-text text-secondary">Elementary School</p>
                                 <p class="card-text text-secondary">August 2016 - May 2022</p>
-                                <p class="card-text">Completed elementary education at SAI Meruyung.
-                                    Developed
-                                    foundational skills in mathematics,
-                                    language arts, and science. Actively participated in various school
-                                    events and
-                                    extracurricular
-                                    activities, including the school science fair, which helped build early
-                                    teamwork and
-                                    leadership skills.</p>
+                                <p class="card-text">Completed elementary education at SAI Meruyung. Developed
+                                    foundational skills in mathematics, language arts, and science. Actively
+                                    participated in various school events and extracurricular activities,
+                                    including the
+                                    school science fair, which helped build early teamwork and leadership
+                                    skills.</p>
                             </div>
                         </div>
                     </div>
@@ -607,12 +749,11 @@
                                 <h5 class="card-title">SMP Negeri 25 Depok</h5>
                                 <p class="card-text text-secondary">Junior High School</p>
                                 <p class="card-text text-secondary">August 2022 - May 2024</p>
-                                <p class="card-text">As an outstanding student, I excelled in subjects such
-                                    as Computer
-                                    Science, Science, and
-                                    Mathematics. Represented my school in the city-level Olimpiade Sains
-                                    Nasional (OSN).
-                                </p>
+                                <p class="card-text">As an outstanding student, I excelled in subjects such as
+                                    Computer
+                                    Science, Science, and Mathematics. Represented my school in the city-level
+                                    Olimpiade
+                                    Sains Nasional (OSN).</p>
                             </div>
                         </div>
                     </div>
@@ -626,22 +767,23 @@
                                 alt="SMK IDN Boarding School Pamijahan" class="card-img-top img-fluid rounded-circle">
                             <div class="card-body text-start">
                                 <h5 class="card-title">SMK IDN Boarding School Pamijahan</h5>
-                                <p class="card-text text-secondary">Vocational High School, Software
-                                    Engineering</p>
-                                <p class="card-text text-secondary">August 2024 - May 2026</p>
-                                <p class="card-text">I am currently a student at a Vocational Boarding
-                                    School
-                                    specializing in Software Engineering.
+                                <p class="card-text text-secondary">Vocational High School, Software Engineering
                                 </p>
+                                <p class="card-text text-secondary">August 2024 - May 2026</p>
+                                <p class="card-text">I am currently a student at a Vocational Boarding School
+                                    specializing in Software Engineering.</p>
                             </div>
                         </div>
                     </div>
-                    <a href="#project" class="btn btn-dark btn-lg my-3"
-                        onmouseover="this.classList.remove('btn-dark'); this.classList.add('border', 'btn-light', 'border-dark-50 border-4');"
-                        onmouseout="this.classList.add('btn-dark'); this.classList.remove('border', 'btn-light', 'border-dark-50 border-4');">Next</a>
                 </div>
+
+                <a href="#project" class="btn btn-dark btn-lg my-3"
+                    onmouseover="this.classList.remove('btn-dark'); this.classList.add('border', 'btn-light', 'border-dark-50 border-4');"
+                    onmouseout="this.classList.add('btn-dark'); this.classList.remove('border', 'btn-light', 'border-dark-50 border-4');">Next</a>
             </div>
         </section>
+
+
         <section id="project" class="bg-light my-5 py-5 border border-dark-50 border-3 rounded-3">
             <div class="container text-center">
                 <h3 class="display-4 animate">WHAT I’VE BUILT</h3>
