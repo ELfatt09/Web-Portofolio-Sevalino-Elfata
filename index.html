@@ -151,7 +151,7 @@
                     <li class="nav-item px-3 col-md-3"
                         onmouseover="this.classList.add('border-bottom', 'border-light', 'border-4');"
                         onmouseout="this.classList.remove('border-bottom', 'border-light', 'border-4');">
-                        <a class="nav-link" href="#project"><i class="bi bi-pass-fill mx-2"> </i>Projects</a>
+                        <a class="nav-link" href="#project"><i class="bi bi-laptop mx-2"> </i>Experience</a>
                     </li>
                 </ul>
             </div>
@@ -172,6 +172,8 @@
         <section id="aboutMe" class="bg-light my-5 py-5 rounded-3">
             <div class="container text-center">
                 <h3 class="display-4 animate">WHO I AM?</h3>
+                <i class="text-secondary mb-2 animate">"With a logical mind and a heart full of purpose, I seek to
+                    improve myself and create value for those around me."</i>
                 <hr class="mb-5 animate">
                 <div class="row justify-content-center">
                     <div class="col-md-6 p-3 text-center animate">
@@ -206,17 +208,29 @@
         </section>
         <section class="accordion bg-light my-5 px-3 py-5" id="accordionExample">
             <div class="container">
-                <h3 id="skills" align="center" class="display-3 animate">WHAT I CAN DO?</h3>
+                <div class="container-fluid text-center">
+                    <h3 id="skills" align="center" class="display-3 animate">WHAT I CAN DO?</h3>
+                    <i class="text-secondary mb-2 animate" align="center">"Harnessing my skills and
+                        knowledge, I turn
+                        challenges into
+                        opportunities, delivering solutions that drive success and innovation."</i>
+                </div>
                 <hr class="animate">
-                <div class="container-fluid row">
+                <div class="container-fluid">
                     <!-- PHP Skills Accordion Item -->
-                    <div class="accordion-item col-lg-6 animate">
+                    <div class="accordion-item animate">
                         <div class="accordion-header" id="headingOne">
-                            <div class="accordion-button" type="button" data-bs-toggle="collapse"
-                                data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                            <div class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
                                 <div class="me-3" style="flex-basis: 200px;"><i class="bi bi-filetype-php mx-2"></i> PHP
                                     Programming</div>
                                 <div class="d-flex flex-column flex-grow-1">
+                                    <i class="text-secondary d-flex mb-2">"PHP is about as
+                                        exciting as
+                                        your
+                                        toothbrush. You use
+                                        it every day, it does the
+                                        job." — Rasmus Lerdorf, creator of PHP</i>
                                     <div class="mb-2">
                                         <span class="badge bg-dark text-light rounded-pill">intermediate</span>
                                     </div>
@@ -376,14 +390,17 @@
                     </div>
 
                     <!-- CSS Skills Accordion Item -->
-                    <div class="accordion-item col-lg-6 animate">
-                        <h2 class="accordion-header" id="headingTwo">
-                            <div class="accordion-button" type="button" data-bs-toggle="collapse"
+                    <div class="accordion-item animate">
+                        <div class="accordion-header" id="headingTwo">
+                            <div class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                                 data-bs-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
                                 <div class="me-3" style="flex-basis: 200px;"><i class="bi bi-filetype-css mx-2"></i>
                                     CSS/HTML
                                     Programming</div>
                                 <div class="d-flex flex-column flex-grow-1">
+                                    <i class="text-secondary d-flex mb-2">"HTML is like the structure of a house, while
+                                        CSS is the decorations, and
+                                        details that beautify and bring the house to life." — Sevalino Elfata</i>
                                     <div class="mb-2">
                                         <span class="badge bg-dark text-light rounded-pill">intermediate</span>
                                     </div>
@@ -393,7 +410,7 @@
                                     </div>
                                 </div>
                             </div>
-                        </h2>
+                        </div>
                         <div id="collapseTwo" class="accordion-collapse collapse hide" aria-labelledby="headingTwo"
                             data-bs-parent="#accordionExample">
                             <div class="accordion-body bg-light text-dark">
@@ -485,14 +502,16 @@
                             </div>
                         </div>
                     </div>
-                    <div class="accordion-item col-lg-6 animate">
-                        <h2 class="accordion-header" id="headingThree">
-                            <div class="accordion-button" type="button" data-bs-toggle="collapse"
+                    <div class="accordion-item animate">
+                        <div class="accordion-header" id="headingThree">
+                            <div class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                                 data-bs-target="#collapseThree" aria-expanded="true" aria-controls="collapseThree">
                                 <div class="me-3" style="flex-basis: 200px;"><i class="bi bi-filetype-js mx-2"></i>
                                     JS
                                     Programming</div>
                                 <div class="d-flex flex-column flex-grow-1">
+                                    <i class="text-secondary d-flex mb-2">"The strength of JavaScript is that you can do
+                                        anything. The weakness is that you will." — Reg Braithwaite</i>
                                     <div class="mb-2">
                                         <span class="badge bg-dark text-light rounded-pill">Beginner</span>
                                     </div>
@@ -502,7 +521,7 @@
                                     </div>
                                 </div>
                             </div>
-                        </h2>
+                        </div>
                         <div id="collapseThree" class="accordion-collapse collapse hide" aria-labelledby="headingThree">
                             <div class="accordion-body bg-light text-dark">
                                 <ul class="list-group">
@@ -590,14 +609,18 @@
                             </div>
                         </div>
                     </div>
-                    <div class="accordion-item col-lg-6 animate mb-auto h-100">
-                        <h2 class="accordion-header" id="headingThree">
-                            <div class="accordion-button d-flex align-items-center mx-auto" type="button"
+                    <div class="accordion-item animate mb-auto h-100">
+                        <div class="accordion-header" id="headingThree">
+                            <div class="accordion-button collapsed d-flex align-items-center mx-auto" type="button"
                                 data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="true"
                                 aria-controls="collapseThree">
-                                <i class="bi bi-translate mx-2"></i> Language
+                                <div class="me-3" style="flex-basis: 200px;">
+                                    <i class="bi bi-translate mx-2"></i> Language
+                                </div>
+                                <i class="text-secondary">"Language is the road map of a culture. It tells you where its
+                                    people come from and where they are going." — Rita Mae Brown</i>
                             </div>
-                        </h2>
+                        </div>
                         <div id="collapseFour" class="accordion-collapse collapse hide" aria-labelledby="headingThree">
                             <div class="accordion-body bg-light text-dark">
                                 <ul class="list-group">
@@ -640,7 +663,11 @@
 
         <section id="Education" class="bg-light my-5 py-5 rounded-3">
             <div class="container text-center">
-                <h3 class="display-4 animate">WHERE I STUDIED?</h3>
+                <div class="container-fluid text-center">
+                    <h3 id="skills" align="center" class="display-3 animate">WHERE I STUDIED?</h3>
+                    <i class="text-secondary mb-2 animate" align="center">"Education is not preparation for life;
+                        education is life itself." — John Dewey</i>
+                </div>
                 <hr class="mb-5">
 
                 <!-- Carousel untuk layar kecil sampai medium -->
@@ -786,18 +813,32 @@
 
         <section id="project" class="bg-light my-5 py-5 border border-dark-50 border-3 rounded-3">
             <div class="container text-center">
-                <h3 class="display-4 animate">WHAT I’VE BUILT</h3>
+                <div class="container-fluid text-center">
+                    <h3 align="center" class="display-3 animate">WHAT I'VE DONE SO FAR?</h3>
+                    <i class="text-secondary mb-2 animate" align="center">"The only way to do great work is to love what
+                        you do." — Steve Jobs
+
+                    </i>
+                </div>
                 <hr class="mb-5 animate">
 
                 <div class="row justify-content-center">
 
                     <div class="col-lg-6 col-md-12 mb-4">
-                        <h4 class="mb-4 animate">Projects</h4>
+                        <div class="container-fluid text-center mb-2">
+                            <h4 class="display-6 mb-4 animate">Projects</h4>
+                            <i class="text-secondary animate" align="center">"The only way to do great work is
+                                to love what
+                                you do." — Steve Jobs
+
+                            </i>
+                        </div>
                         <div class="card shadow-sm border-dark-50 h-100 animate"
                             onmouseover="this.classList.add('bg-dark', 'text-light');"
                             onmouseout="this.classList.remove('bg-dark', 'text-light');">
-                            <div class="card-body text-start">
+                            <div class="card-body text-start mb-2">
                                 <h5 class="card-title">Portfolio Website</h5>
+
                                 <p class="card-text text-secondary">Personal Project</p>
                                 <p class="card-text">The website that you see now is my portofolio website. I designed
                                     and developed my own portfolio website to
